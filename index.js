@@ -32,7 +32,7 @@ const ACTIVITIES = {
 //embeds
 
 const error1 = new Discord.MessageEmbed()
-.setTitle (" :x: | Tienes que especificar la id del canal de audio donde iniciar la sesión. Sigue estas instruciones para obtener la id de un canal de voz Sigue estos pasos para obtener la id de un canal")
+.setTitle (" :x: | You have to indicate de chanel id form the chanel you wan to start the session. Follow theese steeps to obtain de chanel ID from a voice chanel")
 .setImage ("https://i.postimg.cc/zGHmSgv1/Mi-video1-min.gif")
 
 const help1 = new Discord.MessageEmbed()
