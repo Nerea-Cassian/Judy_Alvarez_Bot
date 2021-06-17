@@ -22,9 +22,7 @@ Discord activities Bot
 - run `.juegos <channelid> + the name of the game` (The included are pocker, betrayal, fishington and chess) to start a session of the game 
 - join with the invite created by your bot
 - to obtain the chanel id follow theese steps 
-![](https://i.imgur.com/MPbUAdt.png)
-![](https://i.imgur.com/WG6c97R.png)
-![](https://i.imgur.com/MiCkNWN.png)
+![](https://i.imgur.com/ciwxNt0.gifv)
 
 # Default command prefix
 `.`
