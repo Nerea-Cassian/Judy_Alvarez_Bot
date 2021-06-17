@@ -23,7 +23,7 @@ Discord activities Bot
 - join with the invite created by your bot
 - to obtain the chanel id follow theese steps 
 
-![](https://i.postimg.cc/zGHmSgv1/Mi-video1-min.gif)
+![](https://raw.githubusercontent.com/Nerea-Cassian/Judy_Alvarez_Bot/main/tutorial/Tutorial.gif)
 
 # Default command prefix
 `.`
