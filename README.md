@@ -29,7 +29,7 @@ Discord activities Bot
 `.`
 
 # Preview
-![](https://i.imgur.com/ulJsRDA.gifv)
+![](https://i.imgur.com/WERmNfn.png)
 
 # Discord
 [![](https://i.imgur.com/mUZhPXw.png)](https://discord.gg/GVANsVAFSs)
