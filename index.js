@@ -32,14 +32,14 @@ const ACTIVITIES = {
 //embeds
 
 const error1 = new Discord.MessageEmbed()
-.setTitle (" :x: | You have to indicate de chanel id form the voice chanel you wan to start the session. Follow theese steeps to obtain de chanel ID from a voice chanel")
+.setTitle (" :x: | You have to indicate de chanel id form the voice chanel you want to start the session. Follow theese steeps to obtain de chanel ID from a voice chanel")
 .setImage ("https://i.postimg.cc/zGHmSgv1/Mi-video1-min.gif")
 
 const help1 = new Discord.MessageEmbed()
 .setTitle ("Comands")
 .addFields (
     {name: `${PREFIX}youtube Chanel_ID`, value: `starts a Youtube session in the chanel indicated`},
-    {name: `${PREFIX}games Chanel_ID + pocker, betrayal, fishington or chess` , value: `starts a game session of the game selected and chanel indicated`},
+    {name: `${PREFIX}games Chanel_ID + pocker, betrayal, fishington or chess` , value: `starts a game session of the game selected in the chanel indicated`},
     {name: "To obtain the Chanel_ID of your voice chanel follow theese steps", value: "Tutorial"}
     )
 .setImage ("https://i.postimg.cc/zGHmSgv1/Mi-video1-min.gif")
@@ -104,7 +104,7 @@ client.on("message", async message => {
             .then(res => res.json())
             .then(invite => {
                 if (invite.error || !invite.code) return message.channel.send(error3);
-                const youtube1 = new Discord.MessageEmbed() .setTitle (" :tv: | Click the link to start or join __YouTube Together__ session") .setDescription (`in **${channel.name}**: <https://discord.gg/${invite.code}>`)
+                const youtube1 = new Discord.MessageEmbed() .setTitle (" :tv: | Click the link to start or join __YouTube Together__ session") .setDescription (`in **${channel.name}**: <https://discord.gg/${invite.code}>`) .setURL (`https://discord.gg/${invite.code}`)
                 message.channel.send(youtube1);
             })
             .catch(e => {
@@ -140,7 +140,7 @@ client.on("message", async message => {
             .then(res => res.json())
             .then(invite => {
                 if (invite.error || !invite.code) return message.channel.send(error3);
-                const games1 = new Discord.MessageEmbed() .setTitle (` :video_game: | Click the link to start or join __${activity.name}__ session`) .setDescription (`in **${channel.name}**: <https://discord.gg/${invite.code}>`)
+                const games1 = new Discord.MessageEmbed() .setTitle (` :video_game: | Click the link to start or join __${activity.name}__ session`) .setDescription (`in **${channel.name}**: <https://discord.gg/${invite.code}>`) .setURL(`https://discord.gg/${invite.code}`)
                 message.channel.send(games1);
             })
             .catch(e => {
