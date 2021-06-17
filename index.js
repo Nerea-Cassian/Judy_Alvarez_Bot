@@ -39,7 +39,7 @@ const help1 = new Discord.MessageEmbed()
 .setTitle ("Comands")
 .addFields (
     {name: `${PREFIX}youtube ChanelID", value: "starts a Youtube session in the chanel indicated`},
-    {name: `${PREFIX}games Chanel_ID + pocker, betrayal, fishington or chess", value: "starts a game session of the game selected and chanel indicated`},
+    {name: `${PREFIX}games Chanel_ID + pocker, betrayal, fishington or chess` , value: `starts a game session of the game selected and chanel indicated`},
     {name: "To obtain the Chanel ID of your voice chanel follow theese steps", value: "Tutorial"}
     )
 .setImage ("https://i.postimg.cc/zGHmSgv1/Mi-video1-min.gif")
