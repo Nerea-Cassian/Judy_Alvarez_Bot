@@ -19,7 +19,7 @@ Discord activities Bot
 
 # Comands
 - run `.youtube <channelid>` to star a youtube together sesión
-- run `.juegos <channelid> + the name of the game` (The included are pocker, betrayal, fishington and chess) to star a session of the game 
+- run `.juegos <channelid> + the name of the game` (The included are pocker, betrayal, fishington and chess) to start a session of the game 
 - join with the invite created by your bot
 - to obtain the chanel id follow theese steps 
 ![](https://i.imgur.com/MPbUAdt.png)
