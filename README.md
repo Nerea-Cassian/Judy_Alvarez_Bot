@@ -1,29 +1,30 @@
-# YouTube Together Example
-YouTube Together Example Bot
+# Judy Alvarez Bot
+Discord activities Bot
 
 # Library
 **[discord.js](https://discord.js.org)**
 
 # Bot
-**[Click here to invite](https://discord.com/api/oauth2/authorize?client_id=674970405865390092&permissions=3073&scope=bot)**
+[![](https://i.imgur.com/UlBAWgE.png)](https://discord.com/oauth2/authorize?client_id=854134774825091092&scope=bot&permissions=8)
 
 # Installing
 - clone this repo
 - rename `.env.example` to `.env`
-- add your token in `.env` :: `DISCORD_TOKEN=YOUR_BOT_TOKEN`
+- add your token in `.env` :: `DISCORD_TOKEN=YOURTOKEN`
 - now run the bot with `npm start`
 
-# YouTube Together
-- run `a!yttogether <channelid>`
+# Comands
+- run `.youtube <channelid>` to star a youtube together sesión
+- run `.juegos <channelid> + the name of the game` (The included are pocker, betrayal, fishington and chess)
 - join with the invite created by your bot
+- to obtain the chanel id follow theese steps 
+![](https://streamable.com/u9w8xu)
 
 # Default command prefix
-`a!`
+`.`
 
 # Preview
-![](https://raw.githubusercontent.com/Snowflake107/youtube-together-bot/main/preview/1.png)
-
-![](https://raw.githubusercontent.com/Snowflake107/youtube-together-bot/main/preview/2.png)
+![](https://streamable.com/p6n78c)
 
 # Discord
-[![](https://i.imgur.com/f6hNUfc.png)](https://discord.gg/2SUybzb)
+[![](https://i.imgur.com/mUZhPXw.png)](https://discord.gg/GVANsVAFSs)
