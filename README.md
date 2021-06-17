@@ -1,5 +1,7 @@
 # Judy Alvarez Bot
 Discord activities Bot
+
+
 ![](https://64.media.tumblr.com/264ae43ac5ae9edb014e0d8a2eb86d7e/086fb809dd9cc758-ef/s400x600/2a9e25d8c5a552c22bb14f834525030c042d99db.gifv)
 
 # Library
