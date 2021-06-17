@@ -36,7 +36,7 @@ const error1 = new Discord.MessageEmbed()
 .setImage ("https://i.postimg.cc/zGHmSgv1/Mi-video1-min.gif")
 
 const help1 = new Discord.MessageEmbed()
-.setTitle ("Estos son los comandos disponibles")
+.setTitle ("Comands")
 .addFields (
     {name: `${PREFIX}youtube ChanelID", value: "starts a Youtube session in the chanel indicated`},
     {name: `${PREFIX}games Chanel_ID + pocker, betrayal, fishington or chess", value: "starts a game session of the game selected and chanel indicated`},
