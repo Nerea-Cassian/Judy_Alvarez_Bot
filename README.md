@@ -19,8 +19,9 @@ Discord activities Bot
 
 # Comands
 - run `.youtube <channelid>` to star a youtube together sesión
-- run `.juegos <channelid> + the name of the game` (The included are pocker, betrayal, fishington and chess) to start a session of the game 
+- run `.games <channelid> + the name of the game` (The included are pocker, betrayal, fishington and chess) to start a session of the game 
 - join with the invite created by your bot
+- run `.help` to know available comands
 - to obtain the chanel id follow theese steps 
 
 ![](https://raw.githubusercontent.com/Nerea-Cassian/Judy_Alvarez_Bot/main/tutorial/Tutorial.gif)
