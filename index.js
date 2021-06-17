@@ -32,15 +32,15 @@ const ACTIVITIES = {
 //embeds
 
 const error1 = new Discord.MessageEmbed()
-.setTitle (" :x: | You have to indicate de chanel id form the chanel you wan to start the session. Follow theese steeps to obtain de chanel ID from a voice chanel")
+.setTitle (" :x: | You have to indicate de chanel id form the voice chanel you wan to start the session. Follow theese steeps to obtain de chanel ID from a voice chanel")
 .setImage ("https://i.postimg.cc/zGHmSgv1/Mi-video1-min.gif")
 
 const help1 = new Discord.MessageEmbed()
 .setTitle ("Comands")
 .addFields (
-    {name: `${PREFIX}youtube ChanelID`, value: `starts a Youtube session in the chanel indicated`},
+    {name: `${PREFIX}youtube Chanel_ID`, value: `starts a Youtube session in the chanel indicated`},
     {name: `${PREFIX}games Chanel_ID + pocker, betrayal, fishington or chess` , value: `starts a game session of the game selected and chanel indicated`},
-    {name: "To obtain the Chanel ID of your voice chanel follow theese steps", value: "Tutorial"}
+    {name: "To obtain the Chanel_ID of your voice chanel follow theese steps", value: "Tutorial"}
     )
 .setImage ("https://i.postimg.cc/zGHmSgv1/Mi-video1-min.gif")
 
