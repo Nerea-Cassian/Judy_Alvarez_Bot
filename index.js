@@ -182,7 +182,7 @@ client.on("message", async message => {
       const { voice } = message.member
       
       if (!voice.channelID){ 
-          message.channel.send (lagunabend1) 
+          message.reply(lagunabend1) 
           return 
         }
 
