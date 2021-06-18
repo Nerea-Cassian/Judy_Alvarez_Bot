@@ -36,7 +36,7 @@ const history1 = new Discord.MessageEmbed()
 .setImage ("https://i.imgur.com/K5xGoHs.png")
 .setURL ("https://cyberpunk.fandom.com/wiki/Judy_Alvarez")
 .setFooter ("You can click the title and go to my wiki")
-.setAuthor ("Nerea ama a Judy")
+.setAuthor ("Nerea loves Judy")
 
 const error1 = new Discord.MessageEmbed()
 .setTitle (" :x: | You have to indicate de chanel id form the voice chanel you want to start the session. Follow these steeps to obtain de chanel ID from a voice chanel")
