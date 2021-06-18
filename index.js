@@ -178,16 +178,15 @@ client.on("message", async message => {
     } 
     
     if (cmd === "lagunabend") {
+
       const { voice } = message.member
       
-      
-      if (!voice.channelID) return message.channel.send (lagunabend1);
+      if (!voice.channelID){ 
+          message.channel.send (lagunabend1) 
+          return 
+        }
 
-      voice.chanel.join().then((connection)=> {
-
-        connection.play(path.join(__dirname, `lagunabend`))
-
-      })
+      voice.chanel.join().then((connection)=> { connection.play(path.join(__dirname, `lagunabend`)) })
     } 
 
 
