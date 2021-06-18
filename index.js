@@ -183,7 +183,7 @@ client.on("message", async message => {
 
       const voiceChanel = message.member.voice.chanel;
       
-      if (!voiceChanel.channelID) return message.channel.send (lagunabend1); 
+      if (!voiceChanel) return message.channel.send (lagunabend1); 
       const permissions = voiceChanel.permissionsFor(message.client.user);
       if (!permissions.has(`CONNECT`)) return message.chanel.send(admin1);
       if (!permissions.has(`SPEAK`)) return message.chanel.send(admin1);    
