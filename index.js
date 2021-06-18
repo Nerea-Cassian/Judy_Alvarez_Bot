@@ -1,8 +1,9 @@
 require("dotenv").config();
 
 const { Client, DiscordAPIError } = require("discord.js");
-const path = require ("path");
-const ytdl = require (`yt-search`);
+const path = require("path");
+const ytdl = require(`yt-core`);
+const ytSearch = require (`yt-search`)
 const Discord = require('discord.js');
 const fetch = require("node-fetch");
 const Commando = require ("discord.js-commando");
@@ -190,10 +191,42 @@ client.on("message", async message => {
       
       const connection = await voiceChannel.join().then((connection) => { connection.play("lagunabend.m4a") });
       
-      
-
-
     } 
+
+    if (cmd === "play"){
+
+        const voiceChannel = message.member.voice.channel;
+      
+        if (!voiceChannel) return message.channel.send (lagunabend1); 
+        const permissions = voiceChannel.permissionsFor(message.client.user);
+        if (!permissions.has(`CONNECT`)) return message.channel.send(admin1);
+        if (!permissions.has(`SPEAK`)) return message.channel.send(admin1); 
+
+        const connection = await voiceChannel.join();
+
+        const videoFinder = async (query) => {
+
+            const VideoResult = await ytSearch(query);
+
+            return (videoResult.videos.length > 1) ? videoResult.videos(0) : null;
+
+        }
+
+        const video = await videoFinder(args.join(''))};
+
+        if(video){
+           const stream = ytdl(video.url, {filter: 'audioonly'});
+           connection.play(stream, {seek: 0, volume: 1})
+           .on ('finish', () => {
+             voiceChannel.leave();
+            });
+            const nowplaying1 = new Discord.MessageEmbed()
+            .setTitle(`:thumbsup | Now Playing **${video.title}**`)
+            await message.channel.send (nowplaying1)
+
+        }
+
+    }
 
 
 });
