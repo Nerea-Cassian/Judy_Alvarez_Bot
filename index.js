@@ -222,11 +222,11 @@ client.on("message", async message => {
             });
             const nowplaying1 = new Discord.MessageEmbed()
             .setTitle(`:thumbsup | Now Playing **${video.title}**`)
-            await message.channel.send (nowplaying1)
+            await message.channel.send(nowplaying1)
 
         }
 
-    }
+    };
 
 
 });
