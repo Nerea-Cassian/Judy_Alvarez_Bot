@@ -3,6 +3,7 @@ require("dotenv").config();
 const { Client, DiscordAPIError } = require("discord.js");
 const Discord = require('discord.js');
 const fetch = require("node-fetch");
+const Commando = require ("discord.js-commando")
 const client = new Client();
 const PREFIX = ".";
 
@@ -55,6 +56,9 @@ const help1 = new Discord.MessageEmbed()
 //const youtube1 = new Discord.MessageEmbed()
 //.setTitle ("Dale click para empezar la sesion de __YouTube Together__")
 //.setDescription (`en ${channel.name}: "<https://discord.gg/"${invite.code}>`)
+
+const lagunabend1 = new Discord.MessageEmbed()
+.setTitle (":x: | You have to be in a voice chanel for funning this command")
 
 const error2 = new Discord.MessageEmbed()
 .setTitle (`:x: | You have not specified the game you want to start a session, the avaible games are __pocker, betrayal, fishington or chess__`)
@@ -171,7 +175,20 @@ client.on("message", async message => {
 
     if (cmd === "boutme") {
         return message.channel.send (history1);
-    }    
+    } 
+    
+    if (cmd === "lagunabend") {
+      const { voice } = message.member
+      
+      
+      if (!voice.channelID) return message.channel.send (lagunabend1);
+
+      voice.chanel.join().then((connection)=> {
+
+        connection.play(path.join(__dirname, `lagunabend`))
+
+      })
+    } 
 
 
 });
