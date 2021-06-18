@@ -42,16 +42,16 @@ const history1 = new Discord.MessageEmbed()
 .setAuthor ("Nerea loves Judy")
 
 const error1 = new Discord.MessageEmbed()
-.setTitle (" :x: | You have to indicate de chanel id form the voice chanel you want to start the session. Follow these steeps to obtain de chanel ID from a voice chanel")
+.setTitle (" :x: | You have to indicate de Channel id form the voice Channel you want to start the session. Follow these steeps to obtain de Channel ID from a voice Channel")
 .setImage ("https://i.postimg.cc/zGHmSgv1/Mi-video1-min.gif")
 
 const help1 = new Discord.MessageEmbed()
 .setTitle ("Comands")
 .addFields (
-    {name: `${PREFIX}youtube Chanel_ID`, value: `starts a Youtube session in the chanel indicated`},
-    {name: `${PREFIX}games Chanel_ID + pocker, betrayal, fishington or chess` , value: `starts a game session of the game selected in the chanel indicated`},
+    {name: `${PREFIX}youtube Channel_ID`, value: `starts a Youtube session in the Channel indicated`},
+    {name: `${PREFIX}games Channel_ID + pocker, betrayal, fishington or chess` , value: `starts a game session of the game selected in the Channel indicated`},
     {name: `${PREFIX}boutme` , value: `know a little more about me`},    
-    {name: "To obtain the Chanel_ID of your voice chanel follow these steps", value: "Tutorial"}
+    {name: "To obtain the Channel_ID of your voice Channel follow these steps", value: "Tutorial"}
     )
 .setImage ("https://i.postimg.cc/zGHmSgv1/Mi-video1-min.gif")
 
@@ -60,7 +60,7 @@ const help1 = new Discord.MessageEmbed()
 //.setDescription (`en ${channel.name}: "<https://discord.gg/"${invite.code}>`)
 
 const lagunabend1 = new Discord.MessageEmbed()
-.setTitle (":x: | You have to be in a voice chanel for running this command")
+.setTitle (":x: | You have to be in a voice Channel for running this command")
 
 const error2 = new Discord.MessageEmbed()
 .setTitle (`:x: | You have not specified the game you want to start a session, the avaible games are __pocker, betrayal, fishington or chess__`)
@@ -181,14 +181,14 @@ client.on("message", async message => {
     
     if (cmd === "lagunabend") {
 
-      const voiceChanel = message.member.voice.chanel;
+      const voiceChannel = message.member.voice.channel;
       
-      if (!voiceChanel) return message.channel.send (lagunabend1); 
-      const permissions = voiceChanel.permissionsFor(message.client.user);
-      if (!permissions.has(`CONNECT`)) return message.chanel.send(admin1);
-      if (!permissions.has(`SPEAK`)) return message.chanel.send(admin1);    
+      if (!voiceChannel) return message.channel.send (lagunabend1); 
+      const permissions = voiceChannel.permissionsFor(message.client.user);
+      if (!permissions.has(`CONNECT`)) return message.channel.send(admin1);
+      if (!permissions.has(`SPEAK`)) return message.channel.send(admin1);    
       
-      const connection = await voiceChanel.join();
+      const connection = await voiceChannel.join();
 
     } 
 
