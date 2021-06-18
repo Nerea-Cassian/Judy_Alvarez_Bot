@@ -17,7 +17,7 @@ Discord activities Bot
 - install dependences with `npm install`
 - now run the bot with `npm start`
 
-# Comands
+# Commands
 - run `.youtube <channelid>` to star a youtube together sesión
 - run `.games <channelid> + the name of the game` (The included are pocker, betrayal, fishington and chess) to start a session of the game 
 - join with the invite created by your bot
