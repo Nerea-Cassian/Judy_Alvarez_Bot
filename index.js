@@ -31,8 +31,15 @@ const ACTIVITIES = {
 };
 //embeds
 
+const history1 = new Discord.MessageEmbed()
+.setTitle ("This is a little about me")
+.setImage ("https://i.imgur.com/K5xGoHs.png")
+.setURL ("https://cyberpunk.fandom.com/wiki/Judy_Alvarez")
+.setFooter ("You can click the title and go to my wiki")
+.setAuthor ("Nerea ama a Judy")
+
 const error1 = new Discord.MessageEmbed()
-.setTitle (" :x: | You have to indicate de chanel id form the voice chanel you want to start the session. Follow theese steeps to obtain de chanel ID from a voice chanel")
+.setTitle (" :x: | You have to indicate de chanel id form the voice chanel you want to start the session. Follow these steeps to obtain de chanel ID from a voice chanel")
 .setImage ("https://i.postimg.cc/zGHmSgv1/Mi-video1-min.gif")
 
 const help1 = new Discord.MessageEmbed()
@@ -40,7 +47,8 @@ const help1 = new Discord.MessageEmbed()
 .addFields (
     {name: `${PREFIX}youtube Chanel_ID`, value: `starts a Youtube session in the chanel indicated`},
     {name: `${PREFIX}games Chanel_ID + pocker, betrayal, fishington or chess` , value: `starts a game session of the game selected in the chanel indicated`},
-    {name: "To obtain the Chanel_ID of your voice chanel follow theese steps", value: "Tutorial"}
+    {name: `${PREFIX}boutme` , value: `know a little more about me`},    
+    {name: "To obtain the Chanel_ID of your voice chanel follow these steps", value: "Tutorial"}
     )
 .setImage ("https://i.postimg.cc/zGHmSgv1/Mi-video1-min.gif")
 
@@ -160,6 +168,10 @@ client.on("message", async message => {
     if (cmd === "help") {
         return message.channel.send (help1);
     }
+
+    if (cmd === "boutme") {
+        return message.channel.send (history1);
+    }    
 
 
 });
