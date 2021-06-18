@@ -1,6 +1,7 @@
 require("dotenv").config();
 
 const { Client, DiscordAPIError } = require("discord.js");
+const path = require ("path")
 const Discord = require('discord.js');
 const fetch = require("node-fetch");
 const Commando = require ("discord.js-commando")
@@ -186,7 +187,9 @@ client.on("message", async message => {
           return 
         }
 
-      voice.chanel.join().then((connection)=> { connection.play(path.join(__dirname, `lagunabend`)) })
+      voice.chanel.join().then((connection)=> { 
+          connection.play(path.join(__dirname, `lagunabend.m4a`)) 
+        })
     } 
 
 
