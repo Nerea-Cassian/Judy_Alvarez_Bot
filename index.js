@@ -1,10 +1,11 @@
 require("dotenv").config();
 
 const { Client, DiscordAPIError } = require("discord.js");
-const path = require ("path")
+const path = require ("path"):
+const ytdl = require (`yt-search`);
 const Discord = require('discord.js');
 const fetch = require("node-fetch");
-const Commando = require ("discord.js-commando")
+const Commando = require ("discord.js-commando");
 const client = new Client();
 const PREFIX = ".";
 
