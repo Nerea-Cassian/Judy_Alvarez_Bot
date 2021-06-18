@@ -58,7 +58,7 @@ const help1 = new Discord.MessageEmbed()
 //.setDescription (`en ${channel.name}: "<https://discord.gg/"${invite.code}>`)
 
 const lagunabend1 = new Discord.MessageEmbed()
-.setTitle (":x: | You have to be in a voice chanel for funning this command")
+.setTitle (":x: | You have to be in a voice chanel for running this command")
 
 const error2 = new Discord.MessageEmbed()
 .setTitle (`:x: | You have not specified the game you want to start a session, the avaible games are __pocker, betrayal, fishington or chess__`)
