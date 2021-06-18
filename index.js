@@ -188,7 +188,8 @@ client.on("message", async message => {
       if (!permissions.has(`CONNECT`)) return message.channel.send(admin1);
       if (!permissions.has(`SPEAK`)) return message.channel.send(admin1);    
       
-      const connection = await voiceChannel.join();
+      voiceChannel.channel.join().then((connection) => { connection.play(path.join(__dirname, "lagunaben.m4a")) })
+
 
     } 
 
