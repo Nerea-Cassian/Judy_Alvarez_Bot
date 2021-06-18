@@ -193,40 +193,40 @@ client.on("message", async message => {
       
     } 
 
-    if (cmd === "play") {
+ //   if (cmd === "play") {
+ //
+ //       const voiceChannel = message.member.voice.channel;
+ //     
+ //       if (!voiceChannel) return message.channel.send (lagunabend1); 
+ //       const permissions = voiceChannel.permissionsFor(message.client.user);
+ //       if (!permissions.has(`CONNECT`)) return message.channel.send(admin1);
+ //       if (!permissions.has(`SPEAK`)) return message.channel.send(admin1); 
+ //
+ //       const connection = await voiceChannel.join();
 
-        const voiceChannel = message.member.voice.channel;
-      
-        if (!voiceChannel) return message.channel.send (lagunabend1); 
-        const permissions = voiceChannel.permissionsFor(message.client.user);
-        if (!permissions.has(`CONNECT`)) return message.channel.send(admin1);
-        if (!permissions.has(`SPEAK`)) return message.channel.send(admin1); 
+ //       const videoFinder = async (query) => {
+ //
+ //           const videoResult = await ytSearch(query);
+ //
+ //           return (videoResult.videos.length > 1) ? videoResult.videos(0) : null;
+ //
+ //       }
 
-        const connection = await voiceChannel.join();
+ //       const video = await videoFinder(args.join(''));
 
-        const videoFinder = async (query) => {
-
-            const videoResult = await ytSearch(query);
-
-            return (videoResult.videos.length > 1) ? videoResult.videos(0) : null;
-
-        }
-
-        const video = await videoFinder(args.join(''));
-
-        if(video){
-           const stream = ytdl(video.url, {filter: 'audioonly'});
-           connection.play(stream, {seek: 0, volume: 1})
-           .on ('finish', () => {
-             voiceChannel.leave();
-            });
-            const nowplaying1 = new Discord.MessageEmbed()
-            .setTitle(`:thumbsup | Now Playing **${video.title}**`)
-            await message.channel.send(nowplaying1)
-
-        }
-
-    }
+ //       if(video){
+ //          const stream = ytdl(video.url, {filter: 'audioonly'});
+ //          connection.play(stream, {seek: 0, volume: 1})
+ //          .on ('finish', () => {
+ //            voiceChannel.leave();
+ //           });
+ //           const nowplaying1 = new Discord.MessageEmbed()
+ //           .setTitle(`:thumbsup | Now Playing **${video.title}**`)
+ //           await message.channel.send(nowplaying1)
+ //
+ //       }
+ //
+ //   }
 
 
 
