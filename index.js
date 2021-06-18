@@ -193,7 +193,7 @@ client.on("message", async message => {
       
     } 
 
-    if (cmd === "play"){
+    if (cmd === "play") {
 
         const voiceChannel = message.member.voice.channel;
       
@@ -212,7 +212,7 @@ client.on("message", async message => {
 
         }
 
-        const video = await videoFinder(args.join(''))};
+        const video = await videoFinder(args.join(''));
 
         if(video){
            const stream = ytdl(video.url, {filter: 'audioonly'});
@@ -226,7 +226,11 @@ client.on("message", async message => {
 
         }
 
-    };
+    }
+
+
+
+    
 
 
 });
